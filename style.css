@@ -113,7 +113,10 @@ html {
   padding: 1.5rem 0;
   line-height: 1.8;
 }
-
+.highlight-org {
+  color: #00ff66;   /* green color */
+  font-weight: 600;
+}
 .bio-section {
   position: relative;
   padding-bottom: 20px;

@@ -204,20 +204,26 @@ html {
    Resume Button
 ======================= */
 .resume-button {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.7rem 1.4rem;
   font-size: 0.95rem;
-  background: linear-gradient(135deg, #ff4c4c, #ff1a1a);
-  color: #fff;
+  background: linear-gradient(135deg, #0077ff, #0056cc);
+  color: #ffffff;
   font-weight: 600;
   border: none;
-  border-radius: 6px;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  border-radius: 8px;
+  text-decoration: none; /* removes underline */
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(255, 76, 76, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 119, 255, 0.35);
 }
 
+.resume-button:hover {
+  background: linear-gradient(135deg, #0056cc, #0077ff);
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 119, 255, 0.5);
+}
 .resume-button:hover {
   background: linear-gradient(135deg, #ff1a1a, #ff4c4c);
   transform: scale(1.05);

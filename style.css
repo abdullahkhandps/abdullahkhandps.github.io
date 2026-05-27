@@ -114,9 +114,14 @@ html {
   line-height: 1.8;
 }
 .highlight-org {
-  color: #00ff66;   /* green color */
+  color: #00ff66;
   font-weight: 600;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.highlight-org:hover {
+  color: #ff3333;
 }
 .bio-section {
   position: relative;

@@ -116,6 +116,7 @@ html {
 .highlight-org {
   color: #00ff66;   /* green color */
   font-weight: 600;
+  text-decoration: none;
 }
 .bio-section {
   position: relative;

@@ -425,3 +425,89 @@ header.hero {
     justify-content: center;
   }
 }
+/* =======================
+   Contact Page
+======================= */
+.contact-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 120px 20px;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 500px;
+
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  border-radius: 18px;
+
+  padding: 40px;
+
+  text-align: center;
+
+  box-shadow: 0 0 30px rgba(0,255,225,0.15);
+}
+
+.contact-card h1 {
+  color: #00ffe1;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.contact-description {
+  color: #cccccc;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  width: 100%;
+
+  padding: 16px;
+
+  margin-bottom: 18px;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.gmail-btn {
+  background: #d44638;
+  color: white;
+}
+
+.linkedin-btn {
+  background: #0077b5;
+  color: white;
+}
+
+.contact-button:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}

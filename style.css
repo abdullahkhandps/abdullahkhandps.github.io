@@ -511,3 +511,19 @@ header.hero {
   height: 24px;
   object-fit: contain;
 }
+/* Contact Page Profile Picture */
+.contact-profile-pic {
+  width: 140px;
+  height: 140px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+  object-position: center;
+
+  border: 3px solid #00ffe1;
+
+  margin-bottom: 20px;
+
+  box-shadow: 0 0 20px rgba(0,255,225,0.3);
+}

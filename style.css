@@ -343,89 +343,117 @@ footer {
 /* =======================
    Navigation Bar
 ======================= */
+/* =======================
+   Professional Navbar
+======================= */
+/* =======================
+   Professional Navbar
+======================= */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+
   z-index: 1000;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 15px 40px;
+  padding: 18px 50px;
   box-sizing: border-box;
 
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(8px);
+  background: rgba(10, 10, 10, 0.88);
+  backdrop-filter: blur(12px);
 
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow: 0 4px 20px rgba(0,0,0,0.35);
 }
 
 /* Logo */
 .nav-logo {
   color: #00ffe1;
-  font-size: 1.3rem;
+
+  font-size: 1.5rem;
   font-weight: 700;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
 }
 
-/* Nav Links */
+/* Navigation Links */
 .nav-links {
   list-style: none;
+
   display: flex;
-  gap: 25px;
+  align-items: center;
+
+  gap: 35px;
+
   margin: 0;
   padding: 0;
 }
 
 .nav-links li a {
+  position: relative;
+
   color: #ffffff;
+
   text-decoration: none;
+
   font-size: 1rem;
+  font-weight: 500;
+
   transition: color 0.3s ease;
+}
+
+/* Animated underline */
+.nav-links li a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -6px;
+
+  width: 0%;
+  height: 2px;
+
+  background: #00ffe1;
+
+  transition: width 0.3s ease;
 }
 
 .nav-links li a:hover {
   color: #00ffe1;
 }
 
-/* Prevent Hero Section hiding behind navbar */
-header.hero {
-  padding-top: 80px;
+.nav-links li a:hover::after {
+  width: 100%;
 }
 
-/* Mobile */
+/* Mobile Responsive */
 @media (max-width: 768px) {
+
   .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 12px 20px;
+    padding: 14px 20px;
+  }
+
+  .nav-logo {
+    font-size: 1.1rem;
   }
 
   .nav-links {
-    gap: 15px;
+    gap: 18px;
   }
 
   .nav-links li a {
     font-size: 0.9rem;
   }
-}
-/* Mobile */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 12px 20px;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .nav-links {
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-/* =======================
+}/* =======================
    Contact Page
 ======================= */
 .contact-page {

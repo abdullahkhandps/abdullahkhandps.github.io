@@ -426,7 +426,11 @@ body {
 @media (max-width: 768px) {
 
   .navbar {
-    padding: 12px 14px;
+    padding: 10px 12px;
+
+    flex-direction: column;
+
+    gap: 10px;
   }
 
   .nav-logo {
@@ -434,13 +438,25 @@ body {
   }
 
   .nav-links {
-    gap: 10px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
   }
 
   .nav-links li a {
     padding: 10px 12px;
 
     font-size: 0.82rem;
+  }
+
+  body {
+    padding-top: 120px;
   }
 }
 /* =======================

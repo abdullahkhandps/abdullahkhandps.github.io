@@ -352,9 +352,9 @@ footer {
   justify-content: space-between;
   align-items: center;
 
-  padding: 16px 30px;
+  padding: 14px 28px;
 
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.92);
 
   backdrop-filter: blur(10px);
 
@@ -369,7 +369,7 @@ footer {
 .nav-logo {
   color: #00ffe1;
 
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
 
   text-transform: uppercase;
@@ -377,81 +377,73 @@ footer {
   white-space: nowrap;
 }
 
-/* Navigation Links */
+/* Nav Links Container */
 .nav-links {
   display: flex;
   align-items: center;
 
-  gap: 28px;
+  gap: 18px;
 
   list-style: none;
 
   margin: 0;
   padding: 0;
-
-  flex-wrap: wrap;
 }
 
+/* Navbar Buttons */
 .nav-links li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 16px;
+
   color: white;
 
   text-decoration: none;
 
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
 
-  position: relative;
+  border-left: 1px solid rgba(255,255,255,0.15);
+  border-right: 1px solid rgba(255,255,255,0.15);
 
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-/* Hover Animation */
-.nav-links li a::after {
-  content: "";
-
-  position: absolute;
-
-  left: 0;
-  bottom: -5px;
-
-  width: 0%;
-  height: 2px;
-
-  background: #00ffe1;
-
-  transition: width 0.3s ease;
-}
-
+/* Hover */
 .nav-links li a:hover {
   color: #00ffe1;
+
+  background: rgba(255,255,255,0.05);
 }
 
-.nav-links li a:hover::after {
-  width: 100%;
-}
-
-/* Prevent content hiding */
+/* Prevent page hiding under navbar */
 body {
-  padding-top: 85px;
+  padding-top: 75px;
 }
 
-/* Mobile Responsive */
+/* =======================
+   Mobile Navbar
+======================= */
 @media (max-width: 768px) {
 
   .navbar {
-    padding: 14px 18px;
+    padding: 12px 14px;
   }
 
   .nav-logo {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .nav-links {
-    gap: 14px;
+    gap: 10px;
   }
 
   .nav-links li a {
-    font-size: 0.9rem;
+    padding: 10px 12px;
+
+    font-size: 0.82rem;
   }
 }
 /* =======================

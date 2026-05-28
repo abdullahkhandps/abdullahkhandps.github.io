@@ -212,31 +212,32 @@ html {
 /* =======================
    Resume Button
 ======================= */
+
 .resume-button {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 0.7rem 1.4rem;
+  justify-content: center;
+
+  padding: 12px 16px;
+
+  color: white;
+
+  text-decoration: none;
+
   font-size: 0.95rem;
-  background: linear-gradient(135deg, #0077ff, #0056cc);
-  color: #ffffff;
-  font-weight: 600;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none; /* removes underline */
+  font-weight: 500;
+
+  border-left: 1px solid #666;
+
+  background: rgba(255,255,255,0.03);
+
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 119, 255, 0.35);
 }
 
 .resume-button:hover {
-  background: linear-gradient(135deg, #0056cc, #0077ff);
-  transform: scale(1.05);
-  box-shadow: 0 6px 16px rgba(0, 119, 255, 0.5);
-}
-.resume-button:hover {
-  background: linear-gradient(135deg, #ff1a1a, #ff4c4c);
-  transform: scale(1.05);
-  box-shadow: 0 6px 16px rgba(255, 76, 76, 0.5);
+  color: #00ffe1;
+
+  background: rgba(255,255,255,0.05);
 }
 /* =======================
    Contact Section

@@ -338,86 +338,81 @@ footer {
   }
 }
 /* =======================
-   Navigation Bar
+   PROFESSIONAL HEADER
 ======================= */
-/* =======================
-   Navigation Bar
-======================= */
-/* =======================
-   Professional Navbar
-======================= */
-/* =======================
-   Professional Navbar
-======================= */
+
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
 
-  z-index: 1000;
+  width: 100%;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 18px 50px;
-  box-sizing: border-box;
+  padding: 16px 30px;
 
-  background: rgba(10, 10, 10, 0.88);
-  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.9);
+
+  backdrop-filter: blur(10px);
 
   border-bottom: 1px solid rgba(255,255,255,0.08);
 
-  box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+  z-index: 1000;
+
+  box-sizing: border-box;
 }
 
 /* Logo */
 .nav-logo {
   color: #00ffe1;
 
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
 
-  letter-spacing: 1px;
-
   text-transform: uppercase;
+
+  white-space: nowrap;
 }
 
 /* Navigation Links */
 .nav-links {
-  list-style: none;
-
   display: flex;
   align-items: center;
 
-  gap: 35px;
+  gap: 28px;
+
+  list-style: none;
 
   margin: 0;
   padding: 0;
+
+  flex-wrap: wrap;
 }
 
 .nav-links li a {
-  position: relative;
-
-  color: #ffffff;
+  color: white;
 
   text-decoration: none;
 
   font-size: 1rem;
   font-weight: 500;
 
+  position: relative;
+
   transition: color 0.3s ease;
 }
 
-/* Animated underline */
+/* Hover Animation */
 .nav-links li a::after {
   content: "";
 
   position: absolute;
 
   left: 0;
-  bottom: -6px;
+  bottom: -5px;
 
   width: 0%;
   height: 2px;
@@ -435,25 +430,31 @@ footer {
   width: 100%;
 }
 
+/* Prevent content hiding */
+body {
+  padding-top: 85px;
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
 
   .navbar {
-    padding: 14px 20px;
+    padding: 14px 18px;
   }
 
   .nav-logo {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .nav-links {
-    gap: 18px;
+    gap: 14px;
   }
 
   .nav-links li a {
     font-size: 0.9rem;
   }
-}/* =======================
+}
+/* =======================
    Contact Page
 ======================= */
 .contact-page {

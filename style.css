@@ -567,8 +567,8 @@ body {
 ======================= */
 
 .contact-form {
-  max-width: 800px;
-  margin: 40px auto;
+  max-width: 650px;
+  margin: 40px auto 40px 50px;
 }
 
 .contact-form h2 {
